@@ -10,6 +10,13 @@ module.exports = {
         "coco":{
           "normal":"#948E68"
         },
+        "plant":{
+          "darker":"#122320",
+          "less-darker":"#2F4847",
+          "normal":"#556C62",
+          "bright":"#294E21",
+          "brighter": "#EBF0EB"
+        }
       
       }   
     },

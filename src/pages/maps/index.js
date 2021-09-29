@@ -1,12 +1,11 @@
 import dynamic from "next/dynamic";
 import Head from "next/head";
 import { useState } from "react";
-import HomeHeader from "../../components/HomeHeader";
-import NavigationDrawer from "../../components/NavigationDrawer";
+import NavigationDrawer from "../../components/layouts/NavigationDrawer";
 import styles from "../../styles/EsriMap.module.css";
 
 // The ArcGIS JSAPI does not currently work with SSR, so we need to disable it for the map component
-const EsriMapWithNoSSR = dynamic(() => import("../../components/EsriMap"), {
+const EsriMapWithNoSSR = dynamic(() => import("../../components/contents/EsriMap"), {
   ssr: false,
 });
 

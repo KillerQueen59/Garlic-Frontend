@@ -1,14 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
 import { useState } from "react";
-import ContentRight from "../../components/ContentRight";
-import ContentLeft from "../../components/ContentLeft";
-import Header from "../../components/Header";
-import HomeHeader from "../../components/HomeHeader";
-import NavigationDrawer from "../../components/NavigationDrawer";
-import Carousel from "../../components/Carousel";
-import Link from "next/link";
-import Footer from "../../components/Footer";
+import HomeHeader from "../../components/layouts/HomeHeader";
+import NavigationDrawer from "../../components/layouts/NavigationDrawer";
+import Footer from "../../components/layouts/Footer";
 import Pengembang from "../../components/ProfiePengembang";
 
 export default function Home() {
@@ -19,7 +13,7 @@ export default function Home() {
   };
   return (
     <>
-      <div class=" shadow bg-base-200 drawer">
+      <div class=" shadow bg-plant-brighter drawer">
         <Head>
           <title>INA Garlic</title>
           <link rel="icon" href="/favicon.ico" />
@@ -74,8 +68,8 @@ export default function Home() {
             </div>
 
             {/* Profil Pengembang */}
-            <div class="bg-green-100 py-4 px-4">
-              <div class="mx-16 mt-16 mb-8 text-2xl font-bold ">
+            <div class="bg-plant-darker py-4 px-4">
+              <div class="mx-16 mt-16 mb-8 text-2xl font-bold text-plant-brighter ">
                 Profil Pengembang
               </div>
               <div>
